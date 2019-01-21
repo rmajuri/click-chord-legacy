@@ -1,15 +1,7 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
+// import { Provider } from 'react-redux'
+// import store from './store'
+import Switches from './Components/Main'
 
-import {Navbar} from './components'
-import Routes from './routes'
-
-const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Routes />
-    </div>
-  )
-}
-
-export default App
+ReactDOM.render(<Switches />, document.getElementById('app'))
