@@ -111,7 +111,6 @@ export default class Switches extends React.Component {
       AUDIO.play()
       this.setState({currentRythm: rythmList[next], rythmPlaying: true})
     }
-    console.log(next)
   }
 
   back() {
@@ -232,18 +231,17 @@ export default class Switches extends React.Component {
         })
       }
     } else if (currentKeyIndex - 1 < 0) {
-        this.setState({currentKey: 'B'})
-      } else {
-        this.setState(state => {
-          nextKey = state.keyOptions[currentKeyIndex - 1]
-          return {currentKey: nextKey}
-        })
-      }
+      this.setState({currentKey: 'B'})
+    } else {
+      this.setState(state => {
+        nextKey = state.keyOptions[currentKeyIndex - 1]
+        return {currentKey: nextKey}
+      })
+    }
   }
 
   render() {
     let majorScaleChordKeys
-    console.log(this.state)
     if (Object.keys(majorScaleChords).length) {
       majorScaleChordKeys = Object.keys(majorScaleChords[this.state.currentKey])
     }
