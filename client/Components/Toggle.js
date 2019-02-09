@@ -5,6 +5,7 @@ export default function Toggle(props) {
   return (
     <div
       id={chordName}
+      // onClick={event => handleToggle(event, chordName)}
       onClick={event => handleToggle(event, chordName)}
       className="switch-container"
     >
