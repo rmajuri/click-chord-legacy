@@ -891,7 +891,8 @@ function Toggle(props) {
   var chordName = props.chordName,
       handleToggle = props.handleToggle;
   return _react.default.createElement("div", {
-    id: chordName,
+    id: chordName // onClick={event => handleToggle(event, chordName)}
+    ,
     onClick: function onClick(event) {
       return handleToggle(event, chordName);
     },
@@ -919,8 +920,6 @@ var _Main = _interopRequireDefault(__webpack_require__(/*! ./Components/Main */ 
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// import { Provider } from 'react-redux'
-// import store from './store'
 _reactDom.default.render(_react.default.createElement(_Main.default, null), document.getElementById('app'));
 
 /***/ }),

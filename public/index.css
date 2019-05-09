@@ -1,3 +1,15 @@
+button:hover {
+  background-color: #2bd1fc;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  background-color: #bce8f3;
+}
+
 .isPlaying {
   display: inline-block;
   width: 65px;
