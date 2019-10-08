@@ -12,7 +12,7 @@ After cloning the Click-Chord repo, run `npm install` and then `npm start`. The 
 
 ## How was Click-Chord made?
 
-To build Click-Chord I relied heavily on a library called [Tone.js](https://tonejs.github.io/). Tone.js allows you to write code that makes music in the browser. It's built on top of the [Web Audio API](https://webaudio.github.io/web-audio-api/), which I became really interested in exploring.
+To build Click-Chord, I relied heavily on a library called [Tone.js](https://tonejs.github.io/). Tone.js allows you to write code that makes music in the browser. It's built on top of the [Web Audio API](https://webaudio.github.io/web-audio-api/), which I became really interested in exploring.
 
 The Web Audio API offers you the ability to create [oscillator nodes](https://developer.mozilla.org/en-US/docs/Web/API/OscillatorNode) using vanilla JavaScript. Oscillator nodes literally oscillate, or vibrate, creating sound that in its raw form is honestly rather grating on the ears. When you're phone alerts you of a flash flood with a sudden, piercing noise - that's what an oscillator node sounds like.
 
