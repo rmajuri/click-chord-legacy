@@ -1,5 +1,5 @@
 button:hover {
-  background-color: #2bd1fc;
+  background-color: black;
 }
 
 button:focus {
@@ -7,7 +7,7 @@ button:focus {
 }
 
 button:active {
-  background-color: #bce8f3;
+  background-color: white;
 }
 
 .isPlaying {
@@ -15,26 +15,13 @@ button:active {
   width: 65px;
   height: 65px;
   text-align: center;
-  border: solid black;
+  border: 1px solid black;
   margin-bottom: 15px;
   font-family: monospace;
-  font-size: 10px;
-  background: radial-gradient(
-      circle at 50% 0,
-      rgba(255, 72, 196, 0.5),
-      rgba(255, 0, 0, 0) 70.71%
-    ),
-    radial-gradient(
-      circle at 6.7% 75%,
-      rgba(43, 209, 252, 0.5),
-      rgba(0, 0, 255, 0) 70.71%
-    ),
-    radial-gradient(
-        circle at 93.3% 75%,
-        rgba(243, 234, 95, 0.5),
-        rgba(0, 255, 0, 0) 70.71%
-      )
-      beige;
+  font-size: 20px;
+  background: radial-gradient(circle at 50% 0, white, #ff3855),
+    radial-gradient(circle at 6.7% 75%, white, #ff3855),
+    radial-gradient(circle at 93.3% 75%, white, #ff3855) #ff3855;
   cursor: default;
 }
 
@@ -53,30 +40,29 @@ button:active {
 
 .switch-container {
   display: inline-block;
-  width: 65px;
-  height: 65px;
+  width: 4.5rem;
+  height: 4.5rem;
   text-align: center;
-  background-color: white;
   border: solid black;
-  margin-bottom: 15px;
-  box-shadow: 5px 5px 8px #ff48c4, 10px 10px 8px #2bd1fc, 15px 15px 8px #f3ea5f,
-    20px 20px 8px #c04df9;
-  font-family: monospace;
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 2px #ff3855, 2px 2px 2px white, 2px 2px 2px #ff3855,
+    2px 2px 2px white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-kerning: normal;
   font-weight: lighter;
-  font-size: 10px;
+  font-size: 20px;
   cursor: default;
 }
 
 h4 {
   margin: 10px auto 0;
-  color: #ff48c4;
+  color: black;
   font-size: 0.7rem;
   cursor: default;
 }
 
 body {
-  background-color: #f3ea5f;
+  background-color: white;
 }
 
 h1 {
@@ -84,8 +70,8 @@ h1 {
   width: 100%;
   font-family: 'Candal', sans-serif;
   font-style: italic;
-  color: #2bd1fc;
-  text-shadow: -5px 10px 0px #ff48c4;
+  color: black;
+  text-shadow: -5px 10px 0px #ff3855;
   font-size: 50px;
   margin-bottom: 0;
   letter-spacing: 0.1rem;
@@ -96,8 +82,7 @@ h1 {
   margin: 0;
   letter-spacing: 0.1rem;
   font-family: Candal, sans-serif;
-  text-shadow: -2px 2px 0px #2bd1fc;
-  color: #ff48c4;
+  color: black;
 }
 
 .synth-option-head {
@@ -105,14 +90,13 @@ h1 {
   margin: 0;
   letter-spacing: 0.1rem;
   font-family: Candal, sans-serif;
-  text-shadow: -2px 2px 0px #2bd1fc;
-  color: #ff48c4;
+  color: black;
 }
 
 .synth-header {
   font-family: 'Candal', sans-serif;
-  color: #ff48c4;
-  text-shadow: -2px 2px 0px #2bd1fc;
+  color: black;
+  text-shadow: -1.5px 1px 0px #ff3855;
   font-style: italic;
   letter-spacing: 0.1rem;
 }
@@ -124,8 +108,8 @@ h1 {
 }
 
 #player-controls {
-  background-color: #c04df9;
-  box-shadow: 5px 5px 8px #ff48c4;
+  background-color: transparent;
+  border: 2px solid #ff3855;
   height: 100%;
 }
 
@@ -144,7 +128,7 @@ h1 {
 }
 
 i {
-  color: #2bd1fc;
+  color: #ff3855;
   font-size: 2em;
 }
 
@@ -155,7 +139,7 @@ i.fa {
 }
 
 i.fa:hover {
-  color: #ff3f3f;
+  color: black;
 }
 
 .row {
@@ -168,16 +152,9 @@ i.fa:hover {
 }
 
 .rythm-player {
-  font-family: 'Mr Dafoe', cursive;
-  font-size: 45px;
-  margin: 20px 30px -15px -30px;
-  color: #eb219b;
-  -webkit-text-fill-color: rgba(253, 90, 250, 1);
-  text-shadow: -2px -2px 0 #ffbaf2;
-  -webkit-filter: drop-shadow(3px 3px 1px #441f62);
-  -webkit-transform: skew(-5deg, -5deg);
-  font-weight: normal;
-  z-index: 2;
+  font-family: 'Candal', sans-serif;
+  font-size: 35px;
+  color: black;
 }
 
 .rythm-maker {
@@ -187,8 +164,8 @@ i.fa:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #c04df9;
-  box-shadow: 5px 5px 8px #ff48c4;
+  background-color: transparent;
+  border: 2px solid #ff3855;
 }
 
 .snare-container {
@@ -236,10 +213,10 @@ i.fa:hover {
   top: 140px;
   right: 165px;
   font-size: 20px;
-  font-family: 'Major Mono Display', monospace;
+  font-family: 'Candal', sans-serif;
   height: 40px;
   color: white;
-  background-color: rgb(255, 186, 242, 0.9);
+  background-color: #ff3855;
   z-index: 1000;
 }
 
@@ -258,10 +235,10 @@ i.fa:hover {
 }
 
 .drum-checkbox {
-  background-color: rgb(255, 186, 242, 0.6);
+  background-color: #ff3855;
   position: absolute;
   cursor: pointer;
-  border: 1px solid gray;
+  border: 1px solid black;
   top: 0;
   left: 0;
   right: 0;
@@ -269,7 +246,7 @@ i.fa:hover {
 }
 
 .drum-checkbox-clicked {
-  background-color: #f3ea5f;
+  background-color: black;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -289,11 +266,11 @@ i.fa:hover {
 }
 
 .drum-tag {
-  font-family: monospace;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   letter-spacing: 0.1rem;
   width: 60px;
   margin: 0 15px 0 25px;
-  color: #f3ea5f;
+  color: black;
 }
 
 .change-key-container {
@@ -319,11 +296,11 @@ i.fa:hover {
 
 .synth-option {
   margin: 10px 0;
-  font-family: monospace;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1rem;
   cursor: default;
-  background-color: rgb(255, 186, 242, 0.9);
-  box-shadow: 2px 2px 6px #2bd1fc;
+  color: white;
+  background-color: #ff3855;
 }
 
 i.fas {
@@ -334,7 +311,7 @@ i.fas {
 }
 
 i.fas:hover {
-  color: #ff3f3f;
+  color: black;
 }
 
 .time-button-container {
