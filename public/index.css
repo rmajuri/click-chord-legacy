@@ -4,6 +4,22 @@
   --secondary-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body {
+  background-color: white;
+}
+
+.app-title {
+  text-align: center;
+  width: 100%;
+  font-family: var(--header-font);
+  font-style: italic;
+  color: black;
+  text-shadow: -5px 10px 0px var(--red);
+  font-size: 3.5rem;
+  margin-bottom: 0;
+  letter-spacing: 0.1rem;
+}
+
 button:hover {
   background-color: black;
 }
@@ -19,7 +35,7 @@ button:focus {
   text-align: center;
   border: 1px solid black;
   margin-bottom: 15px;
-  font-family: monospace;
+  font-family: var(--secondary-font);
   font-size: 20px;
   background: radial-gradient(circle at 50% 0, white, var(--red)),
     radial-gradient(circle at 6.7% 75%, white, var(--red)),
@@ -49,7 +65,7 @@ button:focus {
   margin-bottom: 1rem;
   box-shadow: 2px 2px 2px var(--red), 2px 2px 2px white, 2px 2px 2px var(--red),
     2px 2px 2px white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: var(--secondary-font);
   font-kerning: normal;
   font-weight: lighter;
   font-size: 20px;
@@ -61,22 +77,6 @@ h4 {
   color: black;
   font-size: 0.7rem;
   cursor: default;
-}
-
-body {
-  background-color: white;
-}
-
-h1 {
-  text-align: center;
-  width: 100%;
-  font-family: var(--header-font);
-  font-style: italic;
-  color: black;
-  text-shadow: -5px 10px 0px var(--red);
-  font-size: 50px;
-  margin-bottom: 0;
-  letter-spacing: 0.1rem;
 }
 
 .chord-text {
@@ -323,7 +323,7 @@ i.fas:hover {
   background-color: black;
   color: white;
   box-shadow: 5px 5px 8px var(--red);
-  font-family: monospace;
+  font-family: var(--secondary-font);
 }
 
 .bpm-label {

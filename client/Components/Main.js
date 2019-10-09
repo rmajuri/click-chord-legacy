@@ -252,7 +252,7 @@ export default class Switches extends React.Component {
 
     return Object.keys(majorScaleChords).length ? (
       <div>
-        <h1>CLICK-CHORD</h1>
+        <h1 className="app-title">CLICK-CHORD</h1>
         <button className="rythm-button" onClick={this.togglePlayer}>
           {rhytmButtonText}
         </button>

@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Switches from './Components/Main'
+import Main from './Components/Main'
 
-ReactDOM.render(<Switches />, document.getElementById('app'))
+ReactDOM.render(<Main />, document.getElementById('app'))
