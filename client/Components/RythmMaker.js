@@ -121,7 +121,7 @@ class RythmMaker extends Component {
 
     return (
       <div className="rythm-maker">
-        <h1 className="rythm-maker-header">Rythm Maker</h1>
+        <h3 className="rythm-player">Rhythm Maker</h3>
         <div className="time-button-container">
           <label className="bpm-label">BPM</label>
           <input

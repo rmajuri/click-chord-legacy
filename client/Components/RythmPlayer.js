@@ -4,7 +4,7 @@ export default function RythmPlayer(props) {
   const {rythmPlaying, start, back, forward, pause} = props
   return (
     <div id="player-container">
-      <h3 className="rythm-player">Rythmn Player</h3>
+      <h3 className="rythm-player">Rhythm Player</h3>
       <div id="player-controls">
         <div className="row center">
           <i className="fa fa-step-backward" onClick={back} />
